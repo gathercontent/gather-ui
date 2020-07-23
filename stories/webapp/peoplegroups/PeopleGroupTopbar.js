@@ -8,7 +8,7 @@ import {
   Search,
   Navigation
 } from 'lib';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
+import { Dropdown } from 'react-bootstrap';
 
 const PeopleGroupTopbar = () => (
   <TopBar fixed>
@@ -19,10 +19,10 @@ const PeopleGroupTopbar = () => (
       <TopBarCell>People and Groups</TopBarCell>
       <TopBarCell bordered>
         <Navigation>
-          <MenuItem href="#" active>
+          <Dropdown.Item href="#" active>
             Team members
-          </MenuItem>
-          <MenuItem href="#">Roles & permissions</MenuItem>
+          </Dropdown.Item>
+          <Dropdown.Item href="#">Roles & permissions</Dropdown.Item>
         </Navigation>
       </TopBarCell>
     </TopBarContent>

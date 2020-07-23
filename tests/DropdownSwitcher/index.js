@@ -1,4 +1,4 @@
-import { MenuItem, Dropdown } from 'react-bootstrap/lib';
+import { Dropdown } from 'react-bootstrap/lib';
 import { React, shallow } from '../setup';
 import { DropdownSwitcher } from '../../lib';
 
@@ -27,13 +27,13 @@ describe('DropdownSwitcher', () => {
   test('renders a dropdown when a menu is supplied', () => {
     const menu = (
       <Dropdown.Menu className="dropdown__menu dropdown-menu--arrowed">
-        <MenuItem href="#" eventKey="1">
+        <Dropdown.Item href="#" eventKey="1">
           Items
-        </MenuItem>
-        <MenuItem divider />
-        <MenuItem disabled eventKey="2">
+        </Dropdown.Item>
+        <Dropdown.Item divider />
+        <Dropdown.Item disabled eventKey="2">
           Archived Items
-        </MenuItem>
+        </Dropdown.Item>
       </Dropdown.Menu>
     );
 
@@ -42,6 +42,6 @@ describe('DropdownSwitcher', () => {
     });
 
     expect(wrapper.find(Dropdown.Menu)).toHaveLength(1);
-    expect(wrapper.find(MenuItem)).toHaveLength(3);
+    expect(wrapper.find(Dropdown.Item)).toHaveLength(3);
   });
 });

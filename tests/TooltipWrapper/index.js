@@ -1,4 +1,4 @@
-import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
+import { OverlayTrigger } from 'react-bootstrap';
 import { React, shallow } from '../setup';
 import { TooltipWrapper } from '../../lib';
 

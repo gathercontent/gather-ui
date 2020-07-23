@@ -7,7 +7,7 @@ import {
   Navigation,
   Dropdown
 } from 'lib';
-import { MenuItem } from 'react-bootstrap/lib';
+import { Dropdown as BootstrapDropdown } from 'react-bootstrap';
 import { USER_PROJECTS, USER_ACTIVITY } from '../consts';
 
 const IndividualUserHead = ({ activeUser, setActiveState, activeState }) => (
@@ -39,20 +39,20 @@ const IndividualUserHead = ({ activeUser, setActiveState, activeState }) => (
       />
     </Avatar>
     <Navigation tabs className="h-margin-top-half h-margin-bottom-half">
-      <MenuItem
+      <BootstrapDropdown.Item
         href="#"
         active={activeState === USER_PROJECTS}
         onSelect={() => setActiveState(USER_PROJECTS)}
       >
         Projects
-      </MenuItem>
-      <MenuItem
+      </BootstrapDropdown.Item>
+      <BootstrapDropdown.Item
         href="#"
         active={activeState === USER_ACTIVITY}
         onSelect={() => setActiveState(USER_ACTIVITY)}
       >
         Recent activity
-      </MenuItem>
+      </BootstrapDropdown.Item>
     </Navigation>
   </FinderPanelLayout.Header>
 );

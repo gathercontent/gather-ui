@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
+import { Dropdown } from 'react-bootstrap';
 import StoryItem from '../styleguide/StoryItem';
 import TopBar from '../../lib/TopBar';
 import TopBarContent from '../../lib/TopBar/TopBarContent';
@@ -144,10 +144,10 @@ storiesOf('Components', module).add('TopBar', () => (
           </TopBarCell>
           <TopBarCell bordered>
             <Navigation>
-              <MenuItem href="#" active>
+              <Dropdown.Item href="#" active>
                 Items
-              </MenuItem>
-              <MenuItem href="#">Archived Items</MenuItem>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">Archived Items</Dropdown.Item>
             </Navigation>
           </TopBarCell>
         </TopBarContent>
@@ -237,10 +237,10 @@ storiesOf('Components', module).add('TopBar', () => (
           </TopBarCell>
           <TopBarCell bordered>
             <Navigation>
-              <MenuItem href="#" active>
+              <Dropdown.Item href="#" active>
                 Items
-              </MenuItem>
-              <MenuItem href="#">Archived Items</MenuItem>
+              </Dropdown.Item>
+              <Dropdown.Item href="#">Archived Items</Dropdown.Item>
             </Navigation>
           </TopBarCell>
         </TopBarContent>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { MenuItem } from 'react-bootstrap/lib';
+import { Dropdown } from 'react-bootstrap';
 import { Navigation } from '../../lib';
 import StoryItem from '../styleguide/StoryItem';
 
@@ -12,10 +12,10 @@ storiesOf('Components', module).add('Navigation', () => (
       description="An inline navigation currently used in app TopBar."
     >
       <Navigation>
-        <MenuItem href="#" active>
+        <Dropdown.Item href="#" active>
           Items
-        </MenuItem>
-        <MenuItem href="#">Archived Items</MenuItem>
+        </Dropdown.Item>
+        <Dropdown.Item href="#">Archived Items</Dropdown.Item>
       </Navigation>
     </StoryItem>
     <StoryItem
@@ -23,10 +23,10 @@ storiesOf('Components', module).add('Navigation', () => (
       description="A tabbed navigation."
     >
       <Navigation tabs>
-        <MenuItem href="#" active>
+        <Dropdown.Item href="#" active>
           Items
-        </MenuItem>
-        <MenuItem href="#">Archived Items</MenuItem>
+        </Dropdown.Item>
+        <Dropdown.Item href="#">Archived Items</Dropdown.Item>
       </Navigation>
     </StoryItem>
   </div>

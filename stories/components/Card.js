@@ -1,8 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
+import { Row, Col } from 'react-bootstrap';
 import {Card, Figure, Icon} from '../../lib';
 import StoryItem from '../styleguide/StoryItem';
 

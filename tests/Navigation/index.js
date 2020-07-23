@@ -1,4 +1,4 @@
-import MenuItem from 'react-bootstrap/lib/MenuItem';
+import { Dropdown } from 'react-bootstrap';
 import { React, mount } from '../setup';
 import Navigation from '../../lib/Navigation';
 
@@ -8,16 +8,16 @@ describe('Navigation', () => {
   beforeEach(() => {
     wrapper = mount(
       <Navigation>
-        <MenuItem href="#" active>
+        <Dropdown.Item href="#" active>
           Items
-        </MenuItem>
-        <MenuItem href="#">Archived Items</MenuItem>
+        </Dropdown.Item>
+        <Dropdown.Item href="#">Archived Items</Dropdown.Item>
       </Navigation>
     );
   });
 
-  test('renders 2 MenuItems', () => {
-    expect(wrapper.find(MenuItem)).toHaveLength(2);
+  test('renders 2 Dropdown.Items', () => {
+    expect(wrapper.find(Dropdown.Item)).toHaveLength(2);
   });
 
   test('adds the tabs modifier class', () => {
@@ -27,11 +27,11 @@ describe('Navigation', () => {
     expect(wrapper.find('.navigation--tabs')).toHaveLength(1);
   });
 
-  test('applies navigation__item to both MenuItems', () => {
+  test('applies navigation__item to both Dropdown.Items', () => {
     expect(wrapper.find('.navigation__item').hostNodes()).toHaveLength(2);
   });
 
-  test('applies navigation__item--active to both 1 MenuItems', () => {
+  test('applies navigation__item--active to both 1 Dropdown.Items', () => {
     expect(wrapper.find('.navigation__item--active').hostNodes()).toHaveLength(
       1
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
+import { OverlayTrigger } from 'react-bootstrap';
 import PopoverWrapper from '../../lib/PopoverWrapper';
 import StoryItem from '../styleguide/StoryItem';
 import TooltipWrapper from '../../lib/TooltipWrapper/index';
@@ -17,4 +17,4 @@ storiesOf('Components', module)
         </TooltipWrapper>
       </StoryItem>
     </div>
-  ));
+));

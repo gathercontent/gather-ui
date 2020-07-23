@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
 import StoryItem from '../styleguide/StoryItem';
 import MessageBar from '../../lib/MessageBar';
 import MessageBarContent from '../../lib/MessageBar/MessageBarContent';

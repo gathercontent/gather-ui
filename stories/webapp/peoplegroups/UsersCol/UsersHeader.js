@@ -1,7 +1,7 @@
 import React from 'react';
 import { number, func, string } from 'prop-types';
 import { FinderPanelLayout, SearchInput, Navigation, Icon, Button } from 'lib';
-import { MenuItem } from 'react-bootstrap/lib';
+import { Dropdown } from 'react-bootstrap';
 import { ALL_USERS, PENDING_USERS, GUEST_USERS } from '../consts';
 
 const UsersHeader = ({
@@ -31,27 +31,27 @@ const UsersHeader = ({
       label="Filter users"
     />
     <Navigation tabs className="h-margin-top-half h-margin-bottom-half">
-      <MenuItem
+      <Dropdown.Item
         href="#"
         active={activeState === ALL_USERS}
         onSelect={() => setActiveState(ALL_USERS)}
       >
         All users ({userCount})
-      </MenuItem>
-      <MenuItem
+      </Dropdown.Item>
+      <Dropdown.Item
         href="#"
         active={activeState === PENDING_USERS}
         onSelect={() => setActiveState(PENDING_USERS)}
       >
         Pending invite ({pendingCount})
-      </MenuItem>
-      <MenuItem
+      </Dropdown.Item>
+      <Dropdown.Item
         href="#"
         active={activeState === GUEST_USERS}
         onSelect={() => setActiveState(GUEST_USERS)}
       >
         Guest users ({guestCount})
-      </MenuItem>
+      </Dropdown.Item>
     </Navigation>
   </FinderPanelLayout.Header>
 );

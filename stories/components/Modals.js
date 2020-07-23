@@ -1,11 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
-import FormControl from 'react-bootstrap/lib/FormControl';
-import FormGroup from 'react-bootstrap/lib/FormGroup';
-import ControlLabel from 'react-bootstrap/lib/ControlLabel';
+import { Row, Col, FormControl, FormGroup, FormLabel } from 'react-bootstrap';
 import {
   Modal,
   Button,
@@ -384,11 +380,11 @@ storiesOf('Components', module).add('Modals', () => (
           highlight
         >
           <FormGroup>
-            <ControlLabel>Field A</ControlLabel>
+            <FormLabel>Field A</FormLabel>
             <FormControl />
           </FormGroup>
           <FormGroup>
-            <ControlLabel>Field B</ControlLabel>
+            <FormLabel>Field B</FormLabel>
             <FormControl />
           </FormGroup>
         </StatefulFormModal>

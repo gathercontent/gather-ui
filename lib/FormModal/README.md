@@ -23,11 +23,11 @@ A form within a modal
   onHide={action('hide')}
 >
   <FormGroup>
-    <ControlLabel>Field A</ControlLabel>
+    <FormLabel>Field A</FormLabel>
     <FormControl />
   </FormGroup>
   <FormGroup>
-    <ControlLabel>Field B</ControlLabel>
+    <FormLabel>Field B</FormLabel>
     <FormControl />
   </FormGroup>
 </FormModal>
