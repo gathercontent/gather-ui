@@ -7,6 +7,7 @@ require('../styles/bootstrap/_bootstrap.scss');
 require('../styles/styleguide/main.scss');
 require('../styles/main.scss');
 require('font-awesome/css/font-awesome.css');
+require('react-tippy/dist/tippy.css')
 
 function loadStories() {
   require('../stories/index.js');
