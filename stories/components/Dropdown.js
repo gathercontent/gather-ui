@@ -181,6 +181,7 @@ storiesOf('Components', module)
             id="confirm-dropdown"
             confirmationText="Archive"
             confirmationPromise={createDelayedPromise}
+            actionTooltip="archive"
             dropdownContent={(
               <Fragment>
                 <Dropdown.Header>
@@ -201,6 +202,7 @@ storiesOf('Components', module)
             id="trash-dropdown-2"
             confirmationText="Archive"
             confirmationPromise={createDelayedPromise}
+            actionTooltip="do an archive or summin"
             dropdownContent={(
               <Fragment>
                 <Dropdown.Header>
@@ -272,6 +274,7 @@ storiesOf('Components', module)
           <ConfirmationDropdown
             id="trash-dropdown-3"
             confirmationText="Do a thing"
+            actionTooltip="plop plop lpleeep bloop blorp long sentance all the things dooby doo bla bla so fun isnt it great"
             confirmationPromise={createDelayedPromise}
             dropdownContent={(
               <Fragment>

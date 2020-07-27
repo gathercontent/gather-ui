@@ -12,3 +12,26 @@
 .tooltip-wrapper__child--clickable {
     cursor: pointer;
 }
+
+.react-tooltip-lite-arrow {
+  display: none;
+}
+
+.react-tooltip-lite {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #384047;
+  border-radius: 4px;
+  font-size:12px;
+  opacity: 0;
+  visibility: hidden;
+  max-width: 200px !important;
+  .is-open & {
+    animation: dropdownAnimation 750ms;
+    animation-fill-mode: forwards;
+    opacity: 0.8;
+    visibility: visible;
+  }
+}
